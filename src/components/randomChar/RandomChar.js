@@ -5,10 +5,16 @@ import thor from '../../resources/img/thor.jpeg';
 import mjolnir from '../../resources/img/mjolnir.png';
 
 class RandomChar extends Component {
-    constructor(props) {
-        super(props);
+    state = {
+        name: null,
+        description: null,
+        thumbnail: null,
+        homepage: null,
+        wiki: null
     }
     render() {
+        const {name, description, thumbnail, homepage, wiki} = this.state;
+
         return (
             <div className="randomchar">
                 <div className="randomchar__block">
