@@ -88,4 +88,7 @@
   &:hover {
     transform: translateY(-5px);
   }
+  &:disabled {
+    filter: hue-rotate(200deg);
+  }
 }
