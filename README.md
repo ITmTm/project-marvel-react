@@ -1,3 +1,9 @@
+
+![Screenshot_1](https://github.com/ITmTm/project-marvel-react/assets/98873757/c7444d26-7f9e-4620-9c9f-1049b39038fb)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
