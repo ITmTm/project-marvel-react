@@ -8,7 +8,7 @@ import MarvelService from "../../services/MarvelService";
 import './charList.scss';
 
 
-// Функциональный компонент hook(i)
+                                // Функциональный компонент hook(i)
 
 const CharList = (props) => {
 
