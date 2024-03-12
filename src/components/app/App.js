@@ -1,7 +1,7 @@
 // import {Component} from "react";
 
 import {useState} from "react";
-import {BrowserRouter as Router, Route} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import AppHeader from '../appHeader/AppHeader';
 import RandomChar from '../randomChar/RandomChar';
@@ -30,25 +30,27 @@ const App = () => {
 			<div className="app">
 				<AppHeader/>
 				<main>
-					<Route>
-						<ErrorBoundary>
-							<RandomChar />
-						</ErrorBoundary>
-						<div className="char__content">
+					<Switch>
+						<Route exact path='/'>
 							<ErrorBoundary>
-								<CharList onCharSelected={onCharSelected} />
+								<RandomChar />
 							</ErrorBoundary>
-							<ErrorBoundary>
-								<CharInfo charId={selectedChar} />
-							</ErrorBoundary>
-						</div>
-						<img className="bg-decoration" src={decoration} alt="vision"/>
-					</Route>
+							<div className="char__content">
+								<ErrorBoundary>
+									<CharList onCharSelected={onCharSelected} />
+								</ErrorBoundary>
+								<ErrorBoundary>
+									<CharInfo charId={selectedChar} />
+								</ErrorBoundary>
+							</div>
+							<img className="bg-decoration" src={decoration} alt="vision"/>
+						</Route>
 
-					<Route>
-						<AppBanner/>
-						<ComicsList/>
-					</Route>
+						<Route exact path='/comics'>
+							<AppBanner/>
+							<ComicsList/>
+						</Route>
+					</Switch>
 				</main>
 			</div>
 		</Router>
