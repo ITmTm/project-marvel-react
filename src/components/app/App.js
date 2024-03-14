@@ -1,7 +1,7 @@
 // import {Component} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
-import {MainPage, ComicsPage} from "../pages"
+import {MainPage, ComicsPage, Page404} from "../pages"
 import AppHeader from '../appHeader/AppHeader';
 
 
@@ -10,8 +10,6 @@ import AppHeader from '../appHeader/AppHeader';
 
 					// Функциональный компонент hook(i)
 const App = () => {
-	
-
 
 	return (
 		<Router>
@@ -21,6 +19,7 @@ const App = () => {
 					<Routes>
 						<Route path='/' element={<MainPage />} />
 						<Route path='/comics' element={<ComicsPage />} />
+						<Route path='*' element={<Page404 />} />
 					</Routes>
 				</main>
 			</div>
