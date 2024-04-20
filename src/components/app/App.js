@@ -1,6 +1,7 @@
 // import {Component} from "react";
 import {lazy, Suspense} from "react";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes, useLocation} from "react-router-dom";
+import {CSSTransition, SwitchTransition} from "react-transition-group";
 
 import AppHeader from '../appHeader/AppHeader';
 import Spinner from "../spinner/Spinner";
@@ -11,8 +12,24 @@ const ComicsPage = lazy(() => import('../pages/ComicsPage'));
 const SingleComicPage = lazy(() => import('../pages/SingleComicPage'));
 
 
-
 					// Функциональный компонент hook(i)
+const MainContent = () => {
+	const location = useLocation();
+
+	return (
+		<SwitchTransition>
+			<CSSTransition key={location.key} classNames='fade-page' timeout={700} unmountOnExit>
+				<Routes location={location}>
+					<Route path='/' element={<MainPage />} />
+					<Route path='/comics' element={<ComicsPage />} />
+					<Route path='/comics/:comicId' element={<SingleComicPage />} />
+					<Route path='*' element={<Page404 />} />
+				</Routes>
+			</CSSTransition>
+		</SwitchTransition>
+	)
+}
+
 const App = () => {
 
 	return (
@@ -21,12 +38,7 @@ const App = () => {
 				<AppHeader/>
 				<main>
 					<Suspense fallback={<Spinner />}>
-						<Routes>
-							<Route path='/' element={<MainPage />} />
-							<Route path='/comics' element={<ComicsPage />} />
-							<Route path='/comics/:comicId' element={<SingleComicPage />} />
-							<Route path='*' element={<Page404 />} />
-						</Routes>
+						<MainContent />
 					</Suspense>
 				</main>
 			</div>
