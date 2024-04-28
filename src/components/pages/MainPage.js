@@ -1,4 +1,5 @@
 import {useState} from "react";
+import { Helmet } from "react-helmet";
 
 import RandomChar from '../randomChar/RandomChar';
 import CharList from '../charList/CharList';
@@ -21,11 +22,18 @@ const MainPage = () => {
 
 	return (
 		<>
+			<Helmet>
+				<meta
+					name="description"
+					content="Web site created using create-react-app"
+				/>
+				<title>Marvel React App</title>
+			</Helmet>
 			<ErrorBoundary>
-				<RandomChar />
+				<RandomChar/>
 			</ErrorBoundary>
 			<div className="char__content">
-				<ErrorBoundary>
+			<ErrorBoundary>
 					<CharList onCharSelected={onCharSelected} />
 				</ErrorBoundary>
 				<div>
