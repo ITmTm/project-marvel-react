@@ -1,76 +1,39 @@
+# Project Marvel App React
 
-![Screenshot_1](https://github.com/ITmTm/project-marvel-react/assets/98873757/c7444d26-7f9e-4620-9c9f-1049b39038fb)
+[![DEMO](https://img.shields.io/badge/live%20demo-0073cf?style=for-the-badge&logoColor=white)](https://project-marvel-react.vercel.app/)
+
+<hr>
 
 
+## Функции
+* Использование функциональных компонентов (Hook component)
+* Отображение списка героев и комиксов
+* Отображения preloader, error
+* Роутинг приложения
+* Реализация хука запроса на сервер
+* Live search героев
 
+<hr>
 
-# Getting Started with Create React App
+## Technologies
+[![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org)
+[![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=JavaScript&logoSize=%20)](https://www.javascript.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<hr>
 
-## Available Scripts
+## Using Libraries
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-%234169E1?style=for-the-badge&logo=bootstrap&logoSize=%20)](https://getbootstrap.com/)
+[![SASS](https://img.shields.io/badge/SASS(SCSS)-%235F9EA0?style=for-the-badge&logo=SASS&logoSize=%20)](https://sass-lang.com/)
+[![Formik](https://img.shields.io/badge/Formik-blue?style=for-the-badge&logo=formik&logoSize=%20)](https://formik.org/)
+[![Yup](https://img.shields.io/badge/yup-black?style=for-the-badge&logo=yup&logoSize=%20)](https://github.com/jquense/yup)
+[![Helmet](https://img.shields.io/badge/Helmet-%23A9A9A9?style=for-the-badge&logo=helmet&logoSize=%20)](https://github.com/nfl/react-helmet)
+[![http-server](https://img.shields.io/badge/HTTP-server-darkslategrey?style=for-the-badge&logoSize=%20)](https://github.com/http-party/http-server)
 
-In the project directory, you can run:
+<hr>
 
-### `npm start`
+## Getting Started
+Tools needed to run this app: `node` and `npm`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `npm install` to install dependencies
+- `npm start` to run the app
+- Go to `http://localhost:3000`
