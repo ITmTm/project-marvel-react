@@ -30,17 +30,21 @@ const MainPage = () => {
 				/>
 				<title>Marvel React App</title>
 			</Helmet>
+
 			<ErrorBoundary>
 				<RandomChar/>
 			</ErrorBoundary>
+
 			<div className="char__content">
+
 			<ErrorBoundary>
-					<CharList onCharSelected={onCharSelected} />
-				</ErrorBoundary>
+				<CharList onCharSelected={onCharSelected} />
+			</ErrorBoundary>
 				<div>
 					<ErrorBoundary>
 						<CharInfo charId={selectedChar} />
 					</ErrorBoundary>
+
 					<ErrorBoundary>
 						<CharSearchForm />
 					</ErrorBoundary>
